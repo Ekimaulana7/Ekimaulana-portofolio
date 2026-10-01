@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eki Maulana - Quality Performance Officer & Logistics Data Analyst</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        darkBg: '#080C14',
+                        cardBg: '#0F172A',
+                        cardBorder: '#1E293B',
+                        accentBlue: '#3B82F6',
+                        accentCyan: '#06B6D4',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #060911;
+            color: #F1F5F9;
+            overflow-x: hidden;
+        }
+
+        /* Glassmorphism Card dengan Efek Tilt & Hover */
+        .glass-card {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(59, 130, 246, 0.4);
+            transform: translateY(-6px);
+            box-shadow: 0 20px 30px -10px rgba(59, 130, 246, 0.18);
+        }
+
+        /* Hover Glow Effect */
+        .glow-hover {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .glow-hover::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(59,130,246,0.12) 0%, rgba(255,255,255,0) 70%);
+            transform: scale(0);
+            transition: transform 0.5s ease-out;
+            pointer-events: none;
+        }
+
+        .glow-hover:hover::before {
+            transform: scale(1);
+        }
+
+        /* Smooth Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #060911; }
+        ::-webkit-scrollbar-thumb { background: #1E293B; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #3B82F6; }
+    </style>
+</head>
+<body class="font-sans antialiased relative">
+
+    <!-- Canvas Partikel Interaktif Background -->
+    <canvas id="particles" class="fixed top-0 left-0 w-full h-full pointer-events-none z-0"></canvas>
+
+    <div class="relative z-10">
+        <!-- Navigation Bar -->
+        <nav class="flex items-center justify-between px-6 md:px-12 py-4 border-b border-slate-800/80 backdrop-blur-md sticky top-0 z-50 bg-slate-950/70">
+            <div class="flex items-center space-x-3">
+                <div class="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center font-black text-white shadow-lg shadow-blue-500/40">EM</div>
+                <span class="font-bold text-lg tracking-wide text-slate-100">Eki Maulana <span class="text-xs text-blue-400 font-normal hidden sm:inline">| Quality & Data Analyst</span></span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm text-slate-300 font-medium">
+                <a href="#about" class="hover:text-blue-400 transition">About</a>
+                <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+                <a href="#culture" class="hover:text-blue-400 transition">Team Culture</a>
+                <a href="#experience" class="hover:text-blue-400 transition">Experience</a>
+                <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+            </div>
+            <a href="mailto:ekimaulanaa7@gmail.com" class="px-5 py-2 text-xs font-semibold bg-blue-600 text-white rounded-full shadow-md shadow-blue-600/30 hover:bg-blue-500 transition duration-300">
+                <i class="fa-regular fa-envelope mr-1.5"></i> Hubungi Saya
+            </a>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="about" class="max-w-7xl mx-auto px-6 md:px-12 pt-16 pb-20 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center space-x-2 bg-blue-950/60 border border-blue-800/50 px-3.5 py-1.5 rounded-full text-xs text-blue-400 font-medium">
+                    <span class="w-2 h-2 rounded-full bg-blue-400 animate-ping"></span>
+                    <span>5+ Years Logistics & Data Analytics Experience</span>
+                </div>
+                <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                    Eki Maulana
+                </h1>
+                <h2 class="text-xl sm:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
+                    Quality Performance Officer & Logistics Data Analyst
+                </h2>
+                <p class="text-slate-400 leading-relaxed max-w-2xl text-sm sm:text-base">
+                    Spesialis dalam manajemen kinerja kurir, tata kelola 3PL, dan analisis data logistik berbasis otomatisasi & AI. Terbukti sukses dalam merancang kerangka kerja penalti KPI, mengotomatisasi sistem pelaporan, serta mengolah jutaan data operasional untuk mendukung keputusan strategis perusahaan.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="mailto:ekimaulanaa7@gmail.com" class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl shadow-lg shadow-blue-600/30 hover:bg-blue-500 transition transform hover:-translate-y-0.5 text-sm">
+                        <i class="fa-solid fa-paper-plane mr-2"></i> Kontak Email
+                    </a>
+                    <a href="tel:+6281294014543" class="px-6 py-3 bg-slate-800 text-slate-200 border border-slate-700 font-semibold rounded-xl hover:bg-slate-700 transition text-sm">
+                        <i class="fa-solid fa-phone mr-2 text-green-400"></i> +62 812-9401-4543
+                    </a>
+                </div>
+                <div class="flex items-center space-x-6 text-xs text-slate-400 pt-2">
+                    <span><i class="fa-solid fa-location-dot text-red-400 mr-1.5"></i> Jakarta, Indonesia</span>
+                    <span><i class="fa-solid fa-graduation-cap text-blue-400 mr-1.5"></i> S1 Teknik Informatika</span>
+                </div>
+            </div>
+
+            <!-- Card Interactive Simulation Analytics -->
+            <div class="lg:col-span-5">
+                <div class="glass-card p-6 rounded-2xl relative overflow-hidden glow-hover">
+                    <div class="flex justify-between items-center mb-6 border-b border-slate-800 pb-4">
+                        <div>
+                            <h3 class="text-sm font-bold text-white"><i class="fa-solid fa-chart-line text-blue-400 mr-2"></i> Key Performance Indicator</h3>
+                            <p class="text-[11px] text-slate-400">Logistics & Courier Performance Monitoring</p>
+                        </div>
+                        <span class="text-[10px] bg-green-500/20 text-green-400 border border-green-500/30 px-2.5 py-1 rounded-full font-semibold">Active Engine</span>
+                    </div>
+                    
+                    <div class="space-y-5">
+                        <div>
+                            <div class="flex justify-between text-xs mb-1.5">
+                                <span class="text-slate-300">Daily SLA Data Normalization</span>
+                                <span class="text-blue-400 font-bold">1,000,000+ Records/Day</span>
+                            </div>
+                            <div class="w-full bg-slate-800 rounded-full h-2">
+                                <div class="bg-blue-500 h-2 rounded-full transition-all duration-1000" style="width: 100%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-xs mb-1.5">
+                                <span class="text-slate-300">Reporting Time Reduction</span>
+                                <span class="text-cyan-400 font-bold">30% Faster</span>
+                            </div>
+                            <div class="w-full bg-slate-800 rounded-full h-2">
+                                <div class="bg-cyan-400 h-2 rounded-full transition-all duration-1000" style="width: 80%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-xs mb-1.5">
+                                <span class="text-slate-300">3PL Facility Risk Mitigation</span>
+                                <span class="text-emerald-400 font-bold">25% Risk Reduced</span>
+                            </div>
+                            <div class="w-full bg-slate-800 rounded-full h-2">
+                                <div class="bg-emerald-400 h-2 rounded-full transition-all duration-1000" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-slate-800/80 flex justify-between items-center text-xs">
+                        <span class="text-slate-400">Courier Network Coverage</span>
+                        <span class="text-white font-semibold bg-slate-800 px-3 py-1 rounded-lg border border-slate-700">3,500+ Active Couriers</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Counter Section -->
+        <section class="max-w-7xl mx-auto px-6 md:px-12 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass-card p-6 rounded-2xl text-center glow-hover">
+                    <div class="text-4xl font-extrabold text-blue-400 mb-1">5+ Tahun</div>
+                    <div class="text-slate-300 font-medium text-sm">Pengalaman Logistik & Analisis Data</div>
+                </div>
+                <div class="glass-card p-6 rounded-2xl text-center glow-hover">
+                    <div class="text-4xl font-extrabold text-cyan-400 mb-1">1 Juta+</div>
+                    <div class="text-slate-300 font-medium text-sm">Data Rekor SLA Diproses Setiap Hari</div>
+                </div>
+                <div class="glass-card p-6 rounded-2xl text-center glow-hover">
+                    <div class="text-4xl font-extrabold text-emerald-400 mb-1">30%</div>
+                    <div class="text-slate-300 font-medium text-sm">Efisiensi Waktu Melalui Otomatisasi Report</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section id="projects" class="max-w-7xl mx-auto px-6 md:px-12 py-16">
+            <div class="mb-12">
+                <h2 class="text-3xl font-extrabold text-white mb-2">Featured Logistics & Data Projects</h2>
+                <p class="text-slate-400 text-sm">Inisiatif unggulan otomatisasi data, mitigasi risiko, dan pengoptimalan kinerja operasional.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between glow-hover">
+                    <div>
+                        <div class="text-xs font-bold text-blue-400 mb-2 uppercase tracking-wider"><i class="fa-solid fa-robot mr-1"></i> AI & Automation</div>
+                        <h3 class="text-lg font-bold text-white mb-2">Courier KPI Penalty Automation</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed mb-4">
+                            Mengonversi kalkulasi manual berbasis spreadsheet menjadi sistem penalti otomatis berdasar aturan SOP serta memanfaatkan analisis AI untuk mendeteksi pola pelanggaran.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="bg-slate-900/80 p-3 rounded-xl mb-4 text-xs border border-slate-800 space-y-1">
+                            <div class="flex justify-between"><span class="text-slate-400">Time Reduction:</span><span class="text-blue-400 font-bold">Significant</span></div>
+                            <div class="flex justify-between"><span class="text-slate-400">Accuracy:</span><span class="text-emerald-400 font-bold">100% Policy Compliant</span></div>
+                        </div>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-1 rounded border border-slate-700">Automation Logic</span>
+                            <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-1 rounded border border-slate-700">AI Detection</span>
+                            <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-1 rounded border border-slate-700">SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between glow-hover">
+                    <div>
+                        <div class="text-xs font-bold text-cyan-400 mb-2 uppercase tracking-wider"><i class="fa-solid fa-shield-halved mr-1"></i> Risk Mitigation</div>
+                        <h3 class="text-lg font-bold text-white mb-2">3PL Facility Risk & HSE Audit</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed mb-4">
+                            Audit sistematis fasilitas mitra ekspedisi 3PL dan pembuatan rencana kontingensi transportasi/gudang untuk mencegah downtime rantai pasok.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="bg-slate-900/80 p-3 rounded-xl mb-4 text-xs border border-slate-800 space-y-1">
+                            <div class="flex justify-between"><span class="text-slate-400">Risk Reduction:</span><span class="text-cyan-400 font-bold">25% Mitigated</span></div>
+                            <div class="flex justify-between"><span class="text-slate-400">Framework:</span><span class="text-slate-200 font-bold">HSE & Contingency</span></div>
+                        </div>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-1 rounded border border-slate-700">3PL Audit</span>
+                            <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-1 rounded border border-slate-700">Supply Chain</span>
+                            <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-1 rounded border border-slate-700">Executive Pack</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between glow-hover">
+                    <div>
+                        <div class="text-xs font-bold text-emerald-400 mb-2 uppercase tracking-wider"><i class="fa-solid fa-database mr-1"></i> Big Data Processing</div>
+                        <h3 class="text-lg font-bold text-white mb-2">1M+ Daily SLA Data Normalization</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed mb-4">
+                            Pemrosesan dan normalisasi 1 juta+ catatan SLA harian untuk pengiriman inbound dan outbound DKI Jakarta serta pembuatan dasbor visualisasi GM & Regional Managers.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="bg-slate-900/80 p-3 rounded-xl mb-4 text-xs border border-slate-800 space-y-1">
+                            <div class="flex justify-between"><span class="text-slate-400">Volume:</span><span class="text-emerald-400 font-bold">1M+ Records/Day</span></div>
+                            <div class="flex justify-between"><span class="text-slate-400">Users:</span><span class="text-slate-200 font-bold">GMs & Regional Mgrs</span></div>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-1 rounded border border-slate-700">Advanced Excel</span>
+                            <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-1 rounded border border-slate-700">SQL</span>
+                            <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-1 rounded border border-slate-700">BI Dashboards</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Culture & Gallery Section -->
+        <section id="culture" class="max-w-7xl mx-auto px-6 md:px-12 py-16">
+            <div class="mb-10">
+                <h2 class="text-3xl font-extrabold text-white mb-2">Career Gallery & Team Culture</h2>
+                <p class="text-slate-400 text-sm">Kolaborasi tim, perayaan pencapaian, dan budaya kerja profesional dalam lingkungan e-commerce logistik.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Image 1 -->
+                <div class="glass-card rounded-2xl overflow-hidden group glow-hover">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://raw.githubusercontent.com/Ekimaulana7/Ekimaulana-portofolio/main/SeaTalk_IMG_20261001_154855.jpeg" alt="Official Headshot" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute bottom-3 left-4 right-4">
+                            <span class="text-[10px] bg-blue-600 text-white px-2 py-0.5 rounded font-bold uppercase tracking-wider">Official</span>
+                            <h4 class="text-sm font-bold text-white mt-1">Eki Maulana Profile</h4>
+                            <p class="text-[11px] text-slate-300">Quality Performance Officer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 2 -->
+                <div class="glass-card rounded-2xl overflow-hidden group glow-hover">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://raw.githubusercontent.com/Ekimaulana7/Ekimaulana-portofolio/main/SeaTalk_IMG_20261001_154900.jpeg" alt="SEA 16th Anniversary" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute bottom-3 left-4 right-4">
+                            <span class="text-[10px] bg-cyan-600 text-white px-2 py-0.5 rounded font-bold uppercase tracking-wider">Event</span>
+                            <h4 class="text-sm font-bold text-white mt-1">SEA 16th Anniversary</h4>
+                            <p class="text-[11px] text-slate-300">Celebrating Company Milestones</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 3 -->
+                <div class="glass-card rounded-2xl overflow-hidden group glow-hover">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://raw.githubusercontent.com/Ekimaulana7/Ekimaulana-portofolio/main/SeaTalk_IMG_20261001_154902.jpeg" alt="Team Collaboration" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute bottom-3 left-4 right-4">
+                            <span class="text-[10px] bg-emerald-600 text-white px-2 py-0.5 rounded font-bold uppercase tracking-wider">Teamwork</span>
+                            <h4 class="text-sm font-bold text-white mt-1">Logistics & Ops Team</h4>
+                            <p class="text-[11px] text-slate-300">Cross-functional Engagement</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 4 -->
+                <div class="glass-card rounded-2xl overflow-hidden group glow-hover">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://raw.githubusercontent.com/Ekimaulana7/Ekimaulana-portofolio/main/SeaTalk_IMG_20261001_154905.jpeg" alt="Milestone Celebration" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute bottom-3 left-4 right-4">
+                            <span class="text-[10px] bg-indigo-600 text-white px-2 py-0.5 rounded font-bold uppercase tracking-wider">Moment</span>
+                            <h4 class="text-sm font-bold text-white mt-1">Birthday & Milestone Joy</h4>
+                            <p class="text-[11px] text-slate-300">Positive Workplace Culture</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience Section -->
+        <section id="experience" class="max-w-7xl mx-auto px-6 md:px-12 py-16">
+            <h2 class="text-3xl font-extrabold text-white mb-10">Professional Experience</h2>
+            
+            <div class="space-y-8 relative border-l-2 border-slate-800 ml-3 md:ml-6 pl-6 md:pl-8">
+                
+                <!-- Experience 1 -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] md:-left-[39px] top-1.5 w-4 h-4 bg-blue-500 rounded-full border-4 border-slate-950 group-hover:scale-125 transition"></div>
+                    <div class="glass-card p-6 md:p-8 rounded-2xl space-y-4">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-1">
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Quality Performance Officer — Courier Management</h3>
+                                <p class="text-blue-400 font-semibold text-sm">Shopee Express Indonesia</p>
+                            </div>
+                            <span class="text-xs bg-blue-950 text-blue-300 border border-blue-800/60 px-3 py-1 rounded-full font-mono w-fit">April 2026 - Present</span>
+                        </div>
+                        <ul class="list-disc list-inside text-slate-300 text-xs sm:text-sm space-y-2 leading-relaxed">
+                            <li>Menghitung dan memvalidasi penalti performa KPI kurir secara berkala, memastikan potongan akurat dan sesuai SOP.</li>
+                            <li>Memimpin proyek otomatisasi kalkulasi penalti KPI kurir untuk menggantikan alur kerja manual berbasis spreadsheet.</li>
+                            <li>Menerapkan analisis berbasis AI untuk mendeteksi anomali dan pola pelanggaran berulang pada data kinerja kurir.</li>
+                            <li>Mengelola kerangka kerja hukuman dan eskalasi disiplin kurir berdasarkan pelanggaran KPI secara transparan.</li>
+                            <li>Memelihara dan mengaudit basis data kinerja kurir triwulanan untuk memastikan integritas data dan kesiapan audit manajemen.</li>
+                            <li>Berkolaborasi lintas divisi bersama tim Courier Management, Operasional, dan Data untuk menyempurnakan kebijakan penalti.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] md:-left-[39px] top-1.5 w-4 h-4 bg-slate-700 rounded-full border-4 border-slate-950 group-hover:bg-blue-500 group-hover:scale-125 transition"></div>
+                    <div class="glass-card p-6 md:p-8 rounded-2xl space-y-4">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-1">
+                            <div>
+                                <h3 class="text-xl font-bold text-white">3PL Management Specialist</h3>
+                                <p class="text-cyan-400 font-semibold text-sm">Shopee Express Indonesia</p>
+                            </div>
+                            <span class="text-xs bg-slate-800 text-slate-300 border border-slate-700 px-3 py-1 rounded-full font-mono w-fit">June 2025 - March 2026</span>
+                        </div>
+                        <ul class="list-disc list-inside text-slate-300 text-xs sm:text-sm space-y-2 leading-relaxed">
+                            <li>Memastikan kepatuhan terhadap regulasi HSE dan standar kualitas melalui audit sistematis fasilitas mitra 3PL, memitigasi risiko sebesar 25%.</li>
+                            <li>Mengembangkan dan menerapkan rencana kontingensi untuk gangguan transportasi dan pergudangan demi kelangsungan bisnis.</li>
+                            <li>Berkolaborasi dengan tim Supply Planning, Procurement, dan Sales untuk mengintegrasikan strategi 3PL.</li>
+                            <li>Menyusun laporan bulanan (*performance review packs*) mengintegrasikan data OTIF, Lead Time, dan Fulfillment Cycle.</li>
+                            <li>Mempresentasikan analisis data dalam Weekly Business Reviews (WBRs) dan Monthly Performance Meetings (MBRs) kepada manajemen senior.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] md:-left-[39px] top-1.5 w-4 h-4 bg-slate-700 rounded-full border-4 border-slate-950 group-hover:bg-blue-500 group-hover:scale-125 transition"></div>
+                    <div class="glass-card p-6 md:p-8 rounded-2xl space-y-4">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-1">
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Order Tracker Management</h3>
+                                <p class="text-indigo-400 font-semibold text-sm">Shopee Express Indonesia</p>
+                            </div>
+                            <span class="text-xs bg-slate-800 text-slate-300 border border-slate-700 px-3 py-1 rounded-full font-mono w-fit">January 2024 - June 2025</span>
+                        </div>
+                        <ul class="list-disc list-inside text-slate-300 text-xs sm:text-sm space-y-2 leading-relaxed">
+                            <li>Mengembangkan dan mengotomatiskan laporan operasional harian (pesanan *forward*, *return*, *refund*) untuk memantau SLA, mengurangi waktu pelaporan manual hingga 30%.</li>
+                            <li>Menganalisis data pengiriman SLA, tren komplain, dan kesalahan operasional untuk menemukan *root cause*.</li>
+                            <li>Mendukung tim operasional dengan memberikan laporan pesanan yang *over SLA* untuk tindakan korektif tepat waktu.</li>
+                            <li>Berkolaborasi lintas fungsi dengan tim Shopee Marketplace untuk menyelesaikan kendala pengembalian dana dan pesanan.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 4 -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] md:-left-[39px] top-1.5 w-4 h-4 bg-slate-700 rounded-full border-4 border-slate-950 group-hover:bg-blue-500 group-hover:scale-125 transition"></div>
+                    <div class="glass-card p-6 md:p-8 rounded-2xl space-y-4">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-1">
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Quality Control Analyst</h3>
+                                <p class="text-emerald-400 font-semibold text-sm">PT. Global Bintang Timur Express (J&T Express)</p>
+                            </div>
+                            <span class="text-xs bg-slate-800 text-slate-300 border border-slate-700 px-3 py-1 rounded-full font-mono w-fit">November 2022 - October 2023</span>
+                        </div>
+                        <ul class="list-disc list-inside text-slate-300 text-xs sm:text-sm space-y-2 leading-relaxed">
+                            <li>Memproses, menormalisasi, dan menganalisis lebih dari 1 juta rekam data SLA harian pengiriman *inbound* & *outbound* DKI Jakarta.</li>
+                            <li>Merancang dan membangun dasbor visualisasi data KPI yang digunakan oleh General Manager & Regional Manager.</li>
+                            <li>Mengevaluasi kinerja tim regional terhadap metrik utama untuk perbaikan penanganan pengiriman.</li>
+                            <li>Membuat alur kerja pelaporan otomatis untuk mempermudah pemrosesan *dataset* besar.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 5 -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] md:-left-[39px] top-1.5 w-4 h-4 bg-slate-700 rounded-full border-4 border-slate-950 group-hover:bg-blue-500 group-hover:scale-125 transition"></div>
+                    <div class="glass-card p-6 md:p-8 rounded-2xl space-y-4">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-1">
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Warehouse Administrator</h3>
+                                <p class="text-amber-400 font-semibold text-sm">PT Aneka Tirta Talenta</p>
+                            </div>
+                            <span class="text-xs bg-slate-800 text-slate-300 border border-slate-700 px-3 py-1 rounded-full font-mono w-fit">August 2022 - October 2022</span>
+                        </div>
+                        <ul class="list-disc list-inside text-slate-300 text-xs sm:text-sm space-y-2 leading-relaxed">
+                            <li>Mengelola proses pengadaan *end-to-end* dengan membuat Purchase Order (PO) internal dan eksternal.</li>
+                            <li>Mengembangkan sistem penjadwalan inventaris untuk mencegah penumpukan stok (*stock overflow*).</li>
+                            <li>Membuat laporan kinerja vendor mendalam untuk mendukung kolaborasi pemasok.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Education & Skills Matrix -->
+        <section id="skills" class="max-w-7xl mx-auto px-6 md:px-12 py-16">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                
+                <!-- Education -->
+                <div class="lg:col-span-4 space-y-6">
+                    <h2 class="text-2xl font-extrabold text-white">Education</h2>
+                    <div class="glass-card p-6 rounded-2xl glow-hover">
+                        <div class="w-10 h-10 rounded-xl bg-blue-600/20 text-blue-400 flex items-center justify-center mb-4 text-lg">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Bachelor of Informatics</h3>
+                        <p class="text-blue-400 text-xs font-medium">Universitas Indraprasta PGRI (UNINDRA)</p>
+                        <p class="text-slate-400 text-xs mt-2">Teknik Informatika | Lulus November 2022</p>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-2xl glow-hover">
+                        <h3 class="text-sm font-bold text-white mb-3"><i class="fa-solid fa-award text-yellow-400 mr-2"></i> Professional Skills</h3>
+                        <div class="flex flex-wrap gap-1.5 text-xs">
+                            <span class="bg-slate-800 text-slate-300 px-2.5 py-1 rounded border border-slate-700">Cross-Functional Collaboration</span>
+                            <span class="bg-slate-800 text-slate-300 px-2.5 py-1 rounded border border-slate-700">Strategic Decision Making</span>
+                            <span class="bg-slate-800 text-slate-300 px-2.5 py-1 rounded border border-slate-700">Process Automation</span>
+                            <span class="bg-slate-800 text-slate-300 px-2.5 py-1 rounded border border-slate-700">Executive Reporting</span>
+                            <span class="bg-slate-800 text-slate-300 px-2.5 py-1 rounded border border-slate-700">Risk Mitigation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Competencies & Tools -->
+                <div class="lg:col-span-8 space-y-6">
+                    <h2 class="text-2xl font-extrabold text-white">Core Competencies & Tools</h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Card 1 -->
+                        <div class="glass-card p-6 rounded-2xl glow-hover">
+                            <h3 class="text-base font-bold text-blue-400 mb-4 flex items-center"><i class="fa-solid fa-chart-pie mr-2.5"></i> Data Analysis & Visualization</h3>
+                            <ul class="space-y-2 text-xs text-slate-300">
+                                <li>• KPI & Performance Dashboard Development</li>
+                                <li>• SLA & Courier Performance Monitoring</li>
+                                <li>• Root Cause Analysis & Trend Forecasting</li>
+                                <li>• Data Automation & AI-Assisted Analysis</li>
+                                <li>• Data Normalization & Large Dataset Mining</li>
+                            </ul>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="glass-card p-6 rounded-2xl glow-hover">
+                            <h3 class="text-base font-bold text-cyan-400 mb-4 flex items-center"><i class="fa-solid fa-screwdriver-wrench mr-2.5"></i> Technical Tools & Software</h3>
+                            <ul class="space-y-2 text-xs text-slate-300">
+                                <li>• <strong>Microsoft Excel:</strong> Advanced (PivotTables, Macros, Charts)</li>
+                                <li>• <strong>SQL & Database Querying:</strong> Querying & Normalization</li>
+                                <li>• <strong>Reporting Systems:</strong> BI Tools, Looker Studio dashboards</li>
+                                <li>• <strong>Automation Tools:</strong> AI Analysis & AppScript Workflows</li>
+                            </ul>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="glass-card p-6 rounded-2xl glow-hover md:col-span-2">
+                            <h3 class="text-base font-bold text-emerald-400 mb-4 flex items-center"><i class="fa-solid fa-truck-ramp-box mr-2.5"></i> Operational & Logistics Management</h3>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-300">
+                                <div>• Courier KPI Penalty Calculation & Enforcement</div>
+                                <div>• 3PL & Vendor Audit & Management</div>
+                                <div>• Warehouse Administration & Procurement</div>
+                                <div>• Inventory Control & Supply Chain Planning</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer Call-to-Action -->
+        <section id="contact" class="max-w-7xl mx-auto px-6 md:px-12 py-20 text-center">
+            <div class="glass-card p-10 md:p-16 rounded-3xl glow-hover relative overflow-hidden">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">
+                    Ready to Elevate Your Logistics Performance?
+                </h2>
+                <p class="text-slate-400 max-w-2xl mx-auto mb-8 text-sm sm:text-base leading-relaxed">
+                    Saya terbuka untuk peluang profesional dalam posisi Quality Performance, 3PL Management, maupun Analytics Logistik. Mari berdiskusi lebih lanjut!
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="mailto:ekimaulanaa7@gmail.com" class="px-8 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl shadow-lg shadow-blue-500/30 transition transform hover:-translate-y-0.5 text-sm">
+                        <i class="fa-regular fa-paper-plane mr-2"></i> Kirim Email
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="px-8 py-3.5 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold rounded-xl transition text-sm">
+                        <i class="fa-brands fa-linkedin mr-2 text-blue-400"></i> Profil LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center py-8 text-xs text-slate-500 border-t border-slate-800/80">
+            © 2026 Eki Maulana. Quality Performance Officer & Logistics Data Analyst.
+        </footer>
+    </div>
+
+    <!-- Script Animasi Partikel Interactive Background -->
+    <script>
+        const canvas = document.getElementById('particles');
+        const ctx = canvas.getContext('2d');
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        const particles = [];
+        const particleCount = 45;
+
+        for (let i = 0; i < particleCount; i++) {
+            particles.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                radius: Math.random() * 2 + 0.5,
+                vx: (Math.random() - 0.5) * 0.4,
+                vy: (Math.random() - 0.5) * 0.4,
+                alpha: Math.random() * 0.4 + 0.1
+            });
+        }
+
+        function drawParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => {
+                p.x += p.vx;
+                p.y += p.vy;
+
+                if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+                if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(59, 130, 246, ${p.alpha})`;
+                ctx.fill();
+            });
+            requestAnimationFrame(drawParticles);
+        }
+        drawParticles();
+    </script>
+</body>
+</html>
