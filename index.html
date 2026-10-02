@@ -1,618 +1,601 @@
 <!DOCTYPE html>
-<html lang="id" class="dark">
+<html lang="id" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eki Maulana | Courier Quality & Performance Specialist</title>
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Chart.js & Annotation Plugin CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@2.2.1/dist/chartjs-plugin-annotation.min.js"></script>
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              dark: '#060911',
-              card: '#0f172a',
-              accent: '#3b82f6',
-              border: '#1e293b'
-            }
-          }
-        }
-      }
-    }
-  </script>
-</head>
-<body class="bg-[#060911] text-slate-200 font-sans antialiased selection:bg-blue-600 selection:text-white">
-
-  <!-- TOP NOTICE BANNER (DATA DUMMY DISCLAIMER) -->
-  <div class="bg-amber-500/10 border-b border-amber-500/20 text-amber-400 text-xs py-2 px-4 text-center font-medium flex items-center justify-center gap-2">
-    <i data-lucide="info" class="w-4 h-4"></i>
-    <span><strong>SIMULATED DEMO DATA / DUMMY PORTFOLIO SHOWCASE:</strong> All metrics, driver IDs, hub designations, and operational penalty figures shown are strictly simulated for demonstration purposes.</span>
-  </div>
-
-  <!-- NAVIGATION BAR -->
-  <nav class="sticky top-0 z-50 bg-[#060911]/90 backdrop-blur-md border-b border-slate-800/80 px-6 py-3 flex items-center justify-between">
-    <div class="flex items-center gap-3">
-      <div class="bg-blue-600/20 p-2 rounded-lg border border-blue-500/30 text-blue-400">
-        <i data-lucide="shield-check" class="w-5 h-5"></i>
-      </div>
-      <div>
-        <h1 class="font-bold text-white text-sm tracking-wide">Eki Maulana | Courier Quality & Performance Management</h1>
-        <p class="text-[11px] text-slate-400">Shopee Express & J&T Express Alumnus • Jakarta, Indonesia</p>
-      </div>
-    </div>
-    <div class="hidden lg:flex items-center gap-6 text-xs font-medium text-slate-300">
-      <a href="#framework" class="hover:text-blue-400 transition-colors">Framework</a>
-      <a href="#ledger" class="hover:text-blue-400 transition-colors">Quality Audit Ledger</a>
-      <a href="#projects" class="hover:text-blue-400 transition-colors">Key Projects</a>
-      <a href="#gallery" class="hover:text-blue-400 transition-colors">Gallery & Culture</a>
-      <a href="#experience" class="hover:text-blue-400 transition-colors">Experience</a>
-    </div>
-    <a href="mailto:ekimaulanaa7@gmail.com" class="bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold px-4 py-2 rounded-lg transition-all flex items-center gap-2 shadow-lg shadow-blue-600/20">
-      <i data-lucide="download" class="w-3.5 h-3.5"></i> Download CV
-    </a>
-  </nav>
-
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-10">
-
-    <!-- HERO / PROFILE SECTION -->
-    <section class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 lg:p-8 backdrop-blur-sm relative overflow-hidden">
-      <div class="absolute -right-10 -top-10 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
-      
-      <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 relative z-10">
-        <div class="space-y-3 max-w-3xl">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-medium">
-            <i data-lucide="verified" class="w-3.5 h-3.5"></i> Courier Quality Management & Performance Specialist
-          </div>
-          <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
-            Eki Maulana <span class="text-slate-400 text-xl font-normal">| Quality Performance Officer</span>
-          </h1>
-          <p class="text-sm text-slate-300 leading-relaxed">
-            Specialized in field courier performance oversight, SOP compliance enforcement, parcel loss/damage/delay investigations, 3PL partner SLA governance, and automated KPI penalty-incentive reconciliation across nationwide sorting & delivery networks (<strong>300,000+ couriers</strong>).
-          </p>
-          <div class="flex flex-wrap gap-4 text-xs text-slate-400 pt-2">
-            <span class="flex items-center gap-1.5"><i data-lucide="mail" class="w-3.5 h-3.5 text-blue-400"></i> ekimaulanaa7@gmail.com</span>
-            <span class="flex items-center gap-1.5"><i data-lucide="phone" class="w-3.5 h-3.5 text-blue-400"></i> +62 812-9401-4543</span>
-            <span class="flex items-center gap-1.5"><i data-lucide="graduation-cap" class="w-3.5 h-3.5 text-blue-400"></i> B.Inf Indraprasta PGRI (UNINDRA)</span>
-          </div>
-        </div>
-
-        <div class="flex flex-col sm:flex-row lg:flex-col gap-3 w-full lg:w-auto">
-          <a href="#ledger" class="bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold px-5 py-3 rounded-xl transition-all flex items-center justify-center gap-2 shadow-lg shadow-blue-500/20">
-            <i data-lucide="layout-dashboard" class="w-4 h-4"></i> Open Quality Command Center
-          </a>
-          <a href="mailto:ekimaulanaa7@gmail.com" class="bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 text-xs font-semibold px-5 py-3 rounded-xl transition-all flex items-center justify-center gap-2">
-            <i data-lucide="send" class="w-4 h-4"></i> Contact Eki Maulana
-          </a>
-        </div>
-      </div>
-
-      <!-- TOP METRIC CARDS -->
-      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-8 pt-6 border-t border-slate-800/80">
-        <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800">
-          <span class="text-[11px] font-medium text-slate-400 block mb-1">COURIER SLA COMPLIANCE</span>
-          <div class="text-2xl font-bold text-emerald-400 flex items-baseline gap-2">
-            99.4% <span class="text-xs font-normal text-emerald-500">Target 98.5%</span>
-          </div>
-          <p class="text-[10px] text-slate-500 mt-1">Threshold: 98.5% (+0.90% Excess)</p>
-        </div>
-
-        <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800">
-          <span class="text-[11px] font-medium text-slate-400 block mb-1">DAILY QUALITY AUDIT VOLUME</span>
-          <div class="text-2xl font-bold text-white flex items-baseline gap-2">
-            1.24M <span class="text-xs font-normal text-slate-400">packages / day</span>
-          </div>
-          <p class="text-[10px] text-slate-500 mt-1">Nationwide Flow</p>
-        </div>
-
-        <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800">
-          <span class="text-[11px] font-medium text-slate-400 block mb-1">KPI PENALTY RECONCILED</span>
-          <div class="text-2xl font-bold text-blue-400 flex items-baseline gap-2">
-            Rp 842M <span class="text-xs font-normal text-blue-400">Automated</span>
-          </div>
-          <p class="text-[10px] text-slate-500 mt-1">100% Audit Ready</p>
-        </div>
-
-        <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800">
-          <span class="text-[11px] font-medium text-slate-400 block mb-1">3PL HUB COMPLIANCE</span>
-          <div class="text-2xl font-bold text-amber-400 flex items-baseline gap-2">
-            98.2% <span class="text-xs font-normal text-amber-500">48 Hubs</span>
-          </div>
-          <p class="text-[10px] text-slate-500 mt-1">HSE & SLA Audited</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- LIVE QUALITY COMMAND CENTER SECTION -->
-    <section id="ledger" class="space-y-6">
-      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
-        <div>
-          <h2 class="text-lg font-bold text-white flex items-center gap-2">
-            <i data-lucide="activity" class="w-5 h-5 text-blue-500"></i> Courier Quality Command Center (Tableau BI)
-          </h2>
-          <p class="text-xs text-slate-400">Live SLA monitoring, daily dispatch trends, target compliance lines, and penalty ledgers.</p>
-        </div>
-        <div class="flex items-center gap-2">
-          <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-400 text-xs border border-emerald-500/20">
-            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Telemetry Active
-          </span>
-        </div>
-      </div>
-
-      <!-- MAIN BI DASHBOARD GRID -->
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <!-- CHART CARD WITH SLA TARGET LINE -->
-        <div class="lg:col-span-2 bg-slate-900/70 border border-slate-800 rounded-xl p-5 flex flex-col justify-between">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
-            <div>
-              <h3 class="text-xs font-semibold text-slate-300 uppercase tracking-wider">Daily Dispatched Volume vs. SLA Fulfillment (Last 14 Days)</h3>
-              <p class="text-[10px] text-slate-500">Aggregated from J&T & Shopee Express Sorting Centers • Source: SPX Master Event DB</p>
-            </div>
-            <!-- LEGEND BADGES -->
-            <div class="flex items-center gap-3 text-[10px]">
-              <span class="flex items-center gap-1 text-slate-300"><span class="w-2.5 h-2.5 bg-blue-500 rounded-sm inline-block"></span> Volume (k)</span>
-              <span class="flex items-center gap-1 text-emerald-400"><span class="w-2.5 h-0.5 bg-emerald-400 inline-block"></span> SLA %</span>
-              <span class="flex items-center gap-1 text-red-400"><span class="w-2.5 h-0.5 border-t border-dashed border-red-500 inline-block"></span> Target SLA (98.5%)</span>
-            </div>
-          </div>
-          
-          <div class="h-72 relative">
-            <canvas id="slaChart"></canvas>
-          </div>
-
-          <div class="flex justify-between items-center text-[11px] text-slate-400 mt-3 pt-3 border-t border-slate-800/80">
-            <span>Current 24h Average: <strong class="text-emerald-400">99.41%</strong></span>
-            <span>Peak Throughput: <strong class="text-white">1,248,190 Parcels</strong></span>
-          </div>
-        </div>
-
-        <!-- SLA GAUGE & HUB AUDIT STATUS -->
-        <div class="bg-slate-900/70 border border-slate-800 rounded-xl p-5 space-y-6 flex flex-col justify-between">
-          <div>
-            <h3 class="text-xs font-semibold text-slate-300 uppercase tracking-wider mb-3">National SLA Gauge</h3>
-            <div class="text-center py-2">
-              <div class="inline-flex items-center justify-center w-28 h-28 rounded-full border-4 border-emerald-500/30 border-t-emerald-400 text-2xl font-bold text-white bg-slate-950 shadow-lg shadow-emerald-500/10">
-                99.4%
-              </div>
-              <p class="text-xs text-emerald-400 mt-2 font-medium">PASSED SLA</p>
-              <div class="flex justify-around text-[11px] text-slate-400 mt-3 pt-3 border-t border-slate-800">
-                <div>On-Time: <strong class="text-white">1,234,420</strong></div>
-                <div>Breached: <strong class="text-red-400">7,480</strong></div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <h4 class="text-xs font-semibold text-slate-400 mb-2">Key Hub SLA Performance</h4>
-            <div class="space-y-2 text-xs">
-              <div class="flex justify-between items-center">
-                <span class="text-slate-300">Jakarta DC Hub (JKT 01)</span>
-                <span class="text-emerald-400 font-semibold">99.7% • Compliant</span>
-              </div>
-              <div class="flex justify-between items-center">
-                <span class="text-slate-300">Bandung DC Sorting (BDO)</span>
-                <span class="text-emerald-400 font-semibold">99.2% • Compliant</span>
-              </div>
-              <div class="flex justify-between items-center">
-                <span class="text-slate-300">Surabaya Hub Timur (SUB)</span>
-                <span class="text-emerald-400 font-semibold">99.5% • Compliant</span>
-              </div>
-              <div class="flex justify-between items-center">
-                <span class="text-slate-300">Medan Gateway (MES)</span>
-                <span class="text-amber-400 font-semibold">98.1% • Watchlist</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- INCIDENT CARDS -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl">
-          <span class="text-[11px] text-slate-400 block mb-1">Late Transit Delivery</span>
-          <div class="text-xl font-bold text-white">3,605 Incidents</div>
-          <span class="text-[10px] text-red-400 block mt-1">Penalty Value: Rp 360.5M</span>
-        </div>
-        <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl">
-          <span class="text-[11px] text-slate-400 block mb-1">Missing Hub Scans</span>
-          <div class="text-xl font-bold text-white">2,198 Incidents</div>
-          <span class="text-[10px] text-amber-400 block mt-1">Penalty Value: Rp 219.8M</span>
-        </div>
-        <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl">
-          <span class="text-[11px] text-slate-400 block mb-1">Parcel Damage/Mishandling</span>
-          <div class="text-xl font-bold text-white">1,054 Incidents</div>
-          <span class="text-[10px] text-red-400 block mt-1">Penalty Value: Rp 158.1M</span>
-        </div>
-        <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl">
-          <span class="text-[11px] text-slate-400 block mb-1">False POD Attempt</span>
-          <div class="text-xl font-bold text-white">623 Incidents</div>
-          <span class="text-[10px] text-amber-400 block mt-1">Penalty Value: Rp 103.6M</span>
-        </div>
-      </div>
-
-      <!-- TABLE LEDGER -->
-      <div class="bg-slate-900/70 border border-slate-800 rounded-xl overflow-hidden shadow-xl">
-        <div class="p-4 border-b border-slate-800 flex flex-col md:flex-row md:items-center justify-between gap-3">
-          <h3 class="text-xs font-bold text-white uppercase tracking-wider flex items-center gap-2">
-            <i data-lucide="table" class="w-4 h-4 text-blue-400"></i> Live Hub Telemetry & Courier Penalty Ledger
-          </h3>
-          <input type="text" placeholder="Filter courier ID, 3PL partner, or hub..." class="bg-slate-950 border border-slate-800 rounded-lg text-xs text-slate-200 px-3 py-1.5 focus:outline-none focus:border-blue-500 w-full md:w-64" />
-        </div>
-
-        <div class="overflow-x-auto">
-          <table class="w-full text-left text-xs text-slate-300">
-            <thead class="bg-slate-950/80 text-slate-400 uppercase text-[10px] tracking-wider border-b border-slate-800">
-              <tr>
-                <th class="py-3 px-4">Courier / Driver ID</th>
-                <th class="py-3 px-4">Regional Hub</th>
-                <th class="py-3 px-4">Dispatched Pkgs</th>
-                <th class="py-3 px-4">On-Time SLA %</th>
-                <th class="py-3 px-4">Quality Audit Status</th>
-                <th class="py-3 px-4">Penalty Category</th>
-                <th class="py-3 px-4 text-right">Action</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-slate-800/60">
-              <tr class="hover:bg-slate-800/40">
-                <td class="py-3 px-4 font-semibold text-white">SPX-CR-9042 (Rian S.)</td>
-                <td class="py-3 px-4">Jakarta Barat Hub 03 (SPX Fleet)</td>
-                <td class="py-3 px-4">184 pkgs</td>
-                <td class="py-3 px-4 font-semibold text-emerald-400">99.6%</td>
-                <td class="py-3 px-4"><span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 text-[10px]">Compliant</span></td>
-                <td class="py-3 px-4 text-slate-400">No Penalty</td>
-                <td class="py-3 px-4 text-right"><button class="text-blue-400 hover:underline">Inspect</button></td>
-              </tr>
-              <tr class="hover:bg-slate-800/40">
-                <td class="py-3 px-4 font-semibold text-white">SPX-CR-8120 (Bambang H.)</td>
-                <td class="py-3 px-4">Bandung Timur Sort Hub</td>
-                <td class="py-3 px-4">210 pkgs</td>
-                <td class="py-3 px-4 font-semibold text-emerald-400">99.1%</td>
-                <td class="py-3 px-4"><span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 text-[10px]">Auto-Approved</span></td>
-                <td class="py-3 px-4 text-slate-400">Normal Tier</td>
-                <td class="py-3 px-4 text-right"><button class="text-blue-400 hover:underline">Inspect</button></td>
-              </tr>
-              <tr class="hover:bg-slate-800/40">
-                <td class="py-3 px-4 font-semibold text-white">3PL-JT-4491 (J&T Partner Driver)</td>
-                <td class="py-3 px-4">Medan Gateway Sector 2</td>
-                <td class="py-3 px-4">1,420 pkgs</td>
-                <td class="py-3 px-4 font-semibold text-amber-400">97.8%</td>
-                <td class="py-3 px-4"><span class="px-2 py-0.5 rounded bg-amber-500/10 text-amber-400 text-[10px]">Quality Flagged</span></td>
-                <td class="py-3 px-4 text-amber-400">Late Dropoff >45m</td>
-                <td class="py-3 px-4 text-right"><button class="text-amber-400 hover:underline">Audit</button></td>
-              </tr>
-              <tr class="hover:bg-slate-800/40">
-                <td class="py-3 px-4 font-semibold text-white">SPX-CR-3109 (Doni T.)</td>
-                <td class="py-3 px-4">Surabaya Selatan Hub 01</td>
-                <td class="py-3 px-4">142 pkgs</td>
-                <td class="py-3 px-4 font-semibold text-red-400">94.2%</td>
-                <td class="py-3 px-4"><span class="px-2 py-0.5 rounded bg-red-500/10 text-red-400 text-[10px]">Over SLA Penalty</span></td>
-                <td class="py-3 px-4 text-red-400">Batch Missed Scan</td>
-                <td class="py-3 px-4 text-right"><button class="text-red-400 hover:underline">Deduct KPI</button></td>
-              </tr>
-              <tr class="hover:bg-slate-800/40">
-                <td class="py-3 px-4 font-semibold text-white">SPX-CR-5502 (Adit P.)</td>
-                <td class="py-3 px-4">Semarang Sort Hub North</td>
-                <td class="py-3 px-4">176 pkgs</td>
-                <td class="py-3 px-4 font-semibold text-emerald-400">99.8%</td>
-                <td class="py-3 px-4"><span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 text-[10px]">Compliant</span></td>
-                <td class="py-3 px-4 text-emerald-400">Incentive Tier</td>
-                <td class="py-3 px-4 text-right"><button class="text-blue-400 hover:underline">Inspect</button></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="p-3 bg-slate-950/80 border-t border-slate-800 text-[10px] text-slate-500 text-center">
-          Note: All metrics, driver IDs, hub names, and penalty figures shown are simulated dummy data for portfolio showcase purposes only.
-        </div>
-      </div>
-    </section>
-
-    <!-- FRAMEWORK SECTION -->
-    <section id="framework" class="space-y-4 pt-6">
-      <div>
-        <h2 class="text-lg font-bold text-white">Courier Quality Governance Framework</h2>
-        <p class="text-xs text-slate-400">Systematic quality control lifecycle implemented by Eki Maulana to govern courier compliance, minimize parcel handling discrepancies, and automate operational accountability.</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-5 gap-3">
-        <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl space-y-2">
-          <div class="text-xs font-bold text-blue-400">01 / AUDIT INGESTION</div>
-          <h3 class="text-xs font-semibold text-white">Hub Scan & Anomaly Inspection</h3>
-          <p class="text-[11px] text-slate-400">Automated tracking of late departures, missing physical scans, and sorting delays across centers.</p>
-        </div>
-        <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl space-y-2">
-          <div class="text-xs font-bold text-blue-400">02 / FIELD INVESTIGATION</div>
-          <h3 class="text-xs font-semibold text-white">Incident Root Cause Analysis</h3>
-          <p class="text-[11px] text-slate-400">Investigating parcel loss/damage claims, fake POD logs, and regional hub bottlenecks.</p>
-        </div>
-        <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl space-y-2">
-          <div class="text-xs font-bold text-blue-400">03 / KPI RECONCILIATION</div>
-          <h3 class="text-xs font-semibold text-white">Automated Penalty Matrix</h3>
-          <p class="text-[11px] text-slate-400">Calculating driver performance scores, contract deductions, and incentive eligibility.</p>
-        </div>
-        <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl space-y-2">
-          <div class="text-xs font-bold text-blue-400">04 / GOVERNANCE</div>
-          <h3 class="text-xs font-semibold text-white">3PL & Hub Reconciliation</h3>
-          <p class="text-[11px] text-slate-400">Partner dispute settlement, facility HSE verification, vendor penalty billing statements, and hub audits.</p>
-        </div>
-        <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl space-y-2">
-          <div class="text-xs font-bold text-blue-400">05 / CONTINUOUS IMPROVEMENT</div>
-          <h3 class="text-xs font-semibold text-white">Executive Refinement</h3>
-          <p class="text-[11px] text-slate-400">Delivery of executive operational reviews (WBR/MBR), SOP updates, and risk mitigation.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- FEATURED CASE STUDIES -->
-    <section id="projects" class="space-y-4 pt-6">
-      <h2 class="text-lg font-bold text-white">Featured Courier Quality Case Studies</h2>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="bg-slate-900/60 border border-slate-800 p-5 rounded-xl space-y-3">
-          <div class="flex justify-between items-center text-xs">
-            <span class="text-blue-400 font-medium">BI & Command Center</span>
-            <span class="text-slate-500">Shopee Express Indonesia</span>
-          </div>
-          <h3 class="text-sm font-bold text-white">National Courier Performance & SOP Audit Engine</h3>
-          <p class="text-xs text-slate-400">Engineered full-scale Tableau BI monitoring architecture overseeing 300,000+ active couriers across Indonesia. Implemented real-time anomaly detection, localized bottleneck triggers, and SLA threshold monitoring.</p>
-          <div class="flex items-center gap-4 pt-2 text-xs">
-            <div><strong class="text-white block">300K+</strong> Active Couriers</div>
-            <div><strong class="text-emerald-400 block">99.4%</strong> SLA Integrity</div>
-          </div>
-        </div>
-
-        <div class="bg-slate-900/60 border border-slate-800 p-5 rounded-xl space-y-3">
-          <div class="flex justify-between items-center text-xs">
-            <span class="text-blue-400 font-medium">Automation & Reconciliation</span>
-            <span class="text-slate-500">Shopee Express Indonesia</span>
-          </div>
-          <h3 class="text-sm font-bold text-white">Automated Courier KPI Penalty & Incentive System</h3>
-          <p class="text-xs text-slate-400">Constructed rules-based Python & SQL automated reconciliation engine replacing vulnerable manual spreadsheet calculations. Reconciles transit delays, damage logs, and scan discrepancies with 100% computational fidelity.</p>
-          <div class="flex items-center gap-4 pt-2 text-xs">
-            <div><strong class="text-blue-400 block">-85%</strong> Runtime Saved</div>
-            <div><strong class="text-white block">0 Errors</strong> Computational</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- GALLERY SECTION -->
-    <section id="gallery" class="space-y-4 pt-6">
-      <h2 class="text-lg font-bold text-white">Shopee Express Career Gallery & Operations Culture</h2>
-      
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden text-center p-3">
-          <div class="h-36 bg-slate-800 rounded-lg mb-2 flex items-center justify-center text-slate-500 text-xs">
-            [Eki Maulana Headshot]
-          </div>
-          <p class="text-xs font-semibold text-white">Eki Maulana</p>
-          <p class="text-[10px] text-slate-400">Quality Performance Officer</p>
-        </div>
-        <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden text-center p-3">
-          <div class="h-36 bg-slate-800 rounded-lg mb-2 flex items-center justify-center text-slate-500 text-xs">
-            [Happy SEA 16th Anniversary]
-          </div>
-          <p class="text-xs font-semibold text-white">SEA 16th Anniversary</p>
-          <p class="text-[10px] text-slate-400">Shopee HQ Celebration</p>
-        </div>
-        <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden text-center p-3">
-          <div class="h-36 bg-slate-800 rounded-lg mb-2 flex items-center justify-center text-slate-500 text-xs">
-            [Team Collaboration]
-          </div>
-          <p class="text-xs font-semibold text-white">Hub & Operations Sync</p>
-          <p class="text-[10px] text-slate-400">Daily Alignment</p>
-        </div>
-        <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden text-center p-3">
-          <div class="h-36 bg-slate-800 rounded-lg mb-2 flex items-center justify-center text-slate-500 text-xs">
-            [Milestone Celebration]
-          </div>
-          <p class="text-xs font-semibold text-white">Team Birthday & Joy</p>
-          <p class="text-[10px] text-slate-400">Office Culture</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROFESSIONAL EXPERIENCE & SKILLS -->
-    <section id="experience" class="grid grid-cols-1 lg:grid-cols-3 gap-6 pt-6">
-      <div class="lg:col-span-2 space-y-4">
-        <h2 class="text-lg font-bold text-white">Professional Experience</h2>
-
-        <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl space-y-1">
-          <div class="flex justify-between text-xs">
-            <h3 class="font-bold text-white">Quality Performance Officer — Courier Management</h3>
-            <span class="text-blue-400">April 2026 - Present</span>
-          </div>
-          <p class="text-xs text-slate-400 font-medium">Shopee Express Indonesia • Jakarta</p>
-          <p class="text-xs text-slate-300 pt-1">Managing nationwide courier quality standards, recurring KPI penalty calculations and dispute reconciliations, SOP compliance audits, and automated quality controls across regional sorting hubs.</p>
-        </div>
-
-        <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl space-y-1">
-          <div class="flex justify-between text-xs">
-            <h3 class="font-bold text-white">3PL Management Specialist</h3>
-            <span class="text-slate-400">June 2025 - March 2026</span>
-          </div>
-          <p class="text-xs text-slate-400 font-medium">Shopee Express Indonesia • Jakarta</p>
-          <p class="text-xs text-slate-300 pt-1">Administered SLA contracts and capacity quotas across 48 third-party logistics hubs. Reduced partner risk by 25% through rigorous HSE auditing and real-time transit reconciliation.</p>
-        </div>
-
-        <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl space-y-1">
-          <div class="flex justify-between text-xs">
-            <h3 class="font-bold text-white">Quality Control Analyst</h3>
-            <span class="text-slate-400">Nov 2022 - Oct 2023</span>
-          </div>
-          <p class="text-xs text-slate-400 font-medium">P.T. Global Bintang Timur Express (J&T Express)</p>
-          <p class="text-xs text-slate-300 pt-1">Monitored sorting center bottlenecks, analyzed parcel damage and transit delay root causes, and introduced automated Excel models for daily KPI tracking.</p>
-        </div>
-      </div>
-
-      <!-- SKILLS & EDUCATION -->
-      <div class="space-y-4">
-        <h2 class="text-lg font-bold text-white">Technical & Core Skills</h2>
-        
-        <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl space-y-3 text-xs">
-          <div>
-            <div class="flex justify-between mb-1">
-              <span class="text-slate-300">Advanced SQL & CTEs</span>
-              <span class="text-blue-400">95%</span>
-            </div>
-            <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
-              <div class="bg-blue-500 h-full w-[95%]"></div>
-            </div>
-          </div>
-
-          <div>
-            <div class="flex justify-between mb-1">
-              <span class="text-slate-300">Tableau & Looker BI</span>
-              <span class="text-blue-400">92%</span>
-            </div>
-            <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
-              <div class="bg-blue-500 h-full w-[92%]"></div>
-            </div>
-          </div>
-
-          <div>
-            <div class="flex justify-between mb-1">
-              <span class="text-slate-300">Python Automation & Pandas</span>
-              <span class="text-blue-400">88%</span>
-            </div>
-            <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
-              <div class="bg-blue-500 h-full w-[88%]"></div>
-            </div>
-          </div>
-
-          <div>
-            <div class="flex justify-between mb-1">
-              <span class="text-slate-300">Advanced Excel & Modeling</span>
-              <span class="text-blue-400">96%</span>
-            </div>
-            <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
-              <div class="bg-blue-500 h-full w-[96%]"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl text-xs space-y-1">
-          <h3 class="font-bold text-white">Bachelor of Informatics (S.Kom)</h3>
-          <p class="text-slate-400">Universitas Indraprasta PGRI (UNINDRA)</p>
-          <p class="text-[11px] text-slate-500 pt-1">Graduated November 2022. Specialized in database architecture, algorithm efficiency, and process automation.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- FOOTER / CALL TO ACTION -->
-    <section class="bg-slate-900 border border-slate-800 rounded-2xl p-8 text-center space-y-4">
-      <h2 class="text-xl font-bold text-white">Ready to Elevate Courier Quality, SOP Compliance & Logistics Performance?</h2>
-      <p class="text-xs text-slate-400 max-w-xl mx-auto">Available for Courier Quality Management, Quality Performance Officer (QPO), and 3PL Operations roles. Connecting operational ground realities with automated quality compliance standards.</p>
-      
-      <div class="flex flex-wrap justify-center gap-3 pt-2">
-        <a href="mailto:ekimaulanaa7@gmail.com" class="bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold px-5 py-2.5 rounded-lg transition-all flex items-center gap-2">
-          <i data-lucide="mail" class="w-4 h-4"></i> ekimaulanaa7@gmail.com
-        </a>
-        <a href="https://wa.me/6281294014543" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold px-5 py-2.5 rounded-lg transition-all flex items-center gap-2">
-          <i data-lucide="message-square" class="w-4 h-4"></i> WhatsApp Direct
-        </a>
-      </div>
-
-      <p class="text-[10px] text-slate-500 pt-6">© 2026 Eki Maulana — Courier Quality & Performance Management. All metrics calibrated. Tableau Certified Esthetic • SPX & J&T Standards.</p>
-    </section>
-
-  </main>
-
-  <!-- CHART INITIALIZATION SCRIPT WITH DUAL AXIS & TARGET LINE -->
-  <script>
-    lucide.createIcons();
-
-    const ctx = document.getElementById('slaChart').getContext('2d');
-    new Chart(ctx, {
-      type: 'bar',
-      data: {
-        labels: ['Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23', 'Mar 24', 'Mar 25', 'Mar 26', 'Mar 27', 'Mar 28', 'Mar 29', 'Mar 30', 'Today'],
-        datasets: [
-          {
-            type: 'bar',
-            label: 'Volume (k)',
-            data: [1050, 1120, 1180, 1100, 1210, 1150, 1230, 1190, 1240, 1210, 1220, 1200, 1235, 1248],
-            backgroundColor: '#3b82f6',
-            borderRadius: 4,
-            yAxisID: 'y'
-          },
-          {
-            type: 'line',
-            label: 'SLA Fulfillment Rate %',
-            data: [99.1, 99.3, 99.2, 98.9, 99.5, 99.0, 99.4, 99.1, 99.6, 99.3, 99.4, 99.2, 99.5, 99.41],
-            borderColor: '#34d399',
-            backgroundColor: '#34d399',
-            borderWidth: 2,
-            tension: 0.3,
-            pointRadius: 3,
-            yAxisID: 'y1'
-          }
-        ]
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: { display: false },
-          annotation: {
-            annotations: {
-              targetLine: {
-                type: 'line',
-                yMin: 98.5,
-                yMax: 98.5,
-                scaleID: 'y1',
-                borderColor: '#ef4444',
-                borderWidth: 2,
-                borderDash: [6, 6],
-                label: {
-                  display: true,
-                  content: 'Target SLA 98.5%',
-                  position: 'end',
-                  backgroundColor: 'rgba(239, 68, 68, 0.2)',
-                  color: '#fca5a5',
-                  font: { size: 9, weight: 'bold' }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eki Maulana - Quality Performance Officer & Logistics Data Analyst</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        darkBg: '#080C14',
+                        cardBg: '#0F172A',
+                        cardBorder: '#1E293B',
+                        accentBlue: '#3B82F6',
+                        accentCyan: '#06B6D4',
+                    }
                 }
-              }
             }
-          }
-        },
-        scales: {
-          x: {
-            grid: { display: false },
-            ticks: { color: '#64748b', font: { size: 10 } }
-          },
-          y: {
-            type: 'linear',
-            position: 'left',
-            grid: { color: '#1e293b' },
-            ticks: { 
-              color: '#64748b', 
-              font: { size: 10 },
-              callback: function(value) { return value >= 1000 ? (value/1000) + 'M' : value + 'k'; }
-            }
-          },
-          y1: {
-            type: 'linear',
-            position: 'right',
-            min: 95.0,
-            max: 100.0,
-            grid: { drawOnChartArea: false },
-            ticks: { 
-              color: '#34d399', 
-              font: { size: 10 },
-              callback: function(value) { return value + '%'; }
-            }
-          }
         }
-      }
-    });
-  </script>
+    </script>
+
+    <style>
+        body {
+            background-color: #060911;
+            color: #F1F5F9;
+            overflow-x: hidden;
+        }
+
+        /* Glassmorphism Card dengan Efek Hover */
+        .glass-card {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(59, 130, 246, 0.4);
+            transform: translateY(-6px);
+            box-shadow: 0 20px 30px -10px rgba(59, 130, 246, 0.18);
+        }
+
+        /* Hover Glow Effect */
+        .glow-hover {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .glow-hover::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(59,130,246,0.12) 0%, rgba(255,255,255,0) 70%);
+            transform: scale(0);
+            transition: transform 0.5s ease-out;
+            pointer-events: none;
+        }
+
+        .glow-hover:hover::before {
+            transform: scale(1);
+        }
+
+        /* Smooth Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #060911; }
+        ::-webkit-scrollbar-thumb { background: #1E293B; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #3B82F6; }
+    </style>
+</head>
+<body class="font-sans antialiased relative">
+
+    <!-- Canvas Partikel Interaktif Background -->
+    <canvas id="particles" class="fixed top-0 left-0 w-full h-full pointer-events-none z-0"></canvas>
+
+    <div class="relative z-10">
+        <!-- Navigation Bar -->
+        <nav class="flex items-center justify-between px-6 md:px-12 py-4 border-b border-slate-800/80 backdrop-blur-md sticky top-0 z-50 bg-slate-950/70">
+            <div class="flex items-center space-x-3">
+                <div class="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center font-black text-white shadow-lg shadow-blue-500/40">EM</div>
+                <span class="font-bold text-lg tracking-wide text-slate-100">Eki Maulana <span class="text-xs text-blue-400 font-normal hidden sm:inline">| Quality & Data Analyst</span></span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm text-slate-300 font-medium">
+                <a href="#about" class="hover:text-blue-400 transition">About</a>
+                <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+                <a href="#culture" class="hover:text-blue-400 transition">Team Culture</a>
+                <a href="#experience" class="hover:text-blue-400 transition">Experience</a>
+                <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+            </div>
+            <a href="mailto:ekimaulanaa7@gmail.com" class="px-5 py-2 text-xs font-semibold bg-blue-600 text-white rounded-full shadow-md shadow-blue-600/30 hover:bg-blue-500 transition duration-300">
+                <i class="fa-regular fa-envelope mr-1.5"></i> Hubungi Saya
+            </a>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="about" class="max-w-7xl mx-auto px-6 md:px-12 pt-16 pb-20 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center space-x-2 bg-blue-950/60 border border-blue-800/50 px-3.5 py-1.5 rounded-full text-xs text-blue-400 font-medium">
+                    <span class="w-2 h-2 rounded-full bg-blue-400 animate-ping"></span>
+                    <span>5+ Years Logistics & Data Analytics Experience</span>
+                </div>
+                <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                    Eki Maulana
+                </h1>
+                <h2 class="text-xl sm:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
+                    Quality Performance Officer & Logistics Data Analyst
+                </h2>
+                <p class="text-slate-400 leading-relaxed max-w-2xl text-sm sm:text-base">
+                    Spesialis dalam manajemen kinerja kurir, tata kelola 3PL, dan analisis data logistik berbasis otomatisasi & AI. Terbukti sukses dalam merancang kerangka kerja penalti KPI, mengotomatisasi sistem pelaporan, serta mengolah jutaan data operasional untuk mendukung keputusan strategis perusahaan.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="mailto:ekimaulanaa7@gmail.com" class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl shadow-lg shadow-blue-600/30 hover:bg-blue-500 transition transform hover:-translate-y-0.5 text-sm">
+                        <i class="fa-solid fa-paper-plane mr-2"></i> Kontak Email
+                    </a>
+                    <a href="tel:+6281294014543" class="px-6 py-3 bg-slate-800 text-slate-200 border border-slate-700 font-semibold rounded-xl hover:bg-slate-700 transition text-sm">
+                        <i class="fa-solid fa-phone mr-2 text-green-400"></i> +62 812-9401-4543
+                    </a>
+                </div>
+                <div class="flex items-center space-x-6 text-xs text-slate-400 pt-2">
+                    <span><i class="fa-solid fa-location-dot text-red-400 mr-1.5"></i> Jakarta, Indonesia</span>
+                    <span><i class="fa-solid fa-graduation-cap text-blue-400 mr-1.5"></i> S1 Teknik Informatika</span>
+                </div>
+            </div>
+
+            <!-- Card Interactive Analytics Engine -->
+            <div class="lg:col-span-5">
+                <div class="glass-card p-6 rounded-2xl relative overflow-hidden glow-hover">
+                    <div class="flex justify-between items-center mb-6 border-b border-slate-800 pb-4">
+                        <div>
+                            <h3 class="text-sm font-bold text-white"><i class="fa-solid fa-chart-line text-blue-400 mr-2"></i> Key Performance Indicator</h3>
+                            <p class="text-[11px] text-slate-400">Logistics & Courier Performance Monitoring</p>
+                        </div>
+                        <span class="text-[10px] bg-green-500/20 text-green-400 border border-green-500/30 px-2.5 py-1 rounded-full font-semibold">Active Engine</span>
+                    </div>
+                    
+                    <div class="space-y-5">
+                        <div>
+                            <div class="flex justify-between text-xs mb-1.5">
+                                <span class="text-slate-300">Daily SLA Data Normalization</span>
+                                <span class="text-blue-400 font-bold">1,000,000+ Records/Day</span>
+                            </div>
+                            <div class="w-full bg-slate-800 rounded-full h-2">
+                                <div class="bg-blue-500 h-2 rounded-full transition-all duration-1000" style="width: 100%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-xs mb-1.5">
+                                <span class="text-slate-300">Reporting Time Reduction</span>
+                                <span class="text-cyan-400 font-bold">30% Faster</span>
+                            </div>
+                            <div class="w-full bg-slate-800 rounded-full h-2">
+                                <div class="bg-cyan-400 h-2 rounded-full transition-all duration-1000" style="width: 80%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-xs mb-1.5">
+                                <span class="text-slate-300">3PL Facility Risk Mitigation</span>
+                                <span class="text-emerald-400 font-bold">25% Risk Reduced</span>
+                            </div>
+                            <div class="w-full bg-slate-800 rounded-full h-2">
+                                <div class="bg-emerald-400 h-2 rounded-full transition-all duration-1000" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-slate-800/80 flex justify-between items-center text-xs">
+                        <span class="text-slate-400">Courier Network Coverage</span>
+                        <span class="text-white font-semibold bg-slate-800 px-3 py-1 rounded-lg border border-slate-700">3,500+ Active Couriers</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Counter Section -->
+        <section class="max-w-7xl mx-auto px-6 md:px-12 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass-card p-6 rounded-2xl text-center glow-hover">
+                    <div class="text-4xl font-extrabold text-blue-400 mb-1">5+ Tahun</div>
+                    <div class="text-slate-300 font-medium text-sm">Pengalaman Logistik & Analisis Data</div>
+                </div>
+                <div class="glass-card p-6 rounded-2xl text-center glow-hover">
+                    <div class="text-4xl font-extrabold text-cyan-400 mb-1">1 Juta+</div>
+                    <div class="text-slate-300 font-medium text-sm">Data Rekor SLA Diproses Setiap Hari</div>
+                </div>
+                <div class="glass-card p-6 rounded-2xl text-center glow-hover">
+                    <div class="text-4xl font-extrabold text-emerald-400 mb-1">30%</div>
+                    <div class="text-slate-300 font-medium text-sm">Efisiensi Waktu Melalui Otomatisasi Report</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section id="projects" class="max-w-7xl mx-auto px-6 md:px-12 py-16">
+            <div class="mb-12">
+                <h2 class="text-3xl font-extrabold text-white mb-2">Featured Logistics & Data Projects</h2>
+                <p class="text-slate-400 text-sm">Inisiatif unggulan otomatisasi data, mitigasi risiko, dan pengoptimalan kinerja operasional.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between glow-hover">
+                    <div>
+                        <div class="text-xs font-bold text-blue-400 mb-2 uppercase tracking-wider"><i class="fa-solid fa-robot mr-1"></i> AI & Automation</div>
+                        <h3 class="text-lg font-bold text-white mb-2">Courier KPI Penalty Automation</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed mb-4">
+                            Mengonversi kalkulasi manual berbasis spreadsheet menjadi sistem penalti otomatis berdasar aturan SOP serta memanfaatkan analisis AI untuk mendeteksi pola pelanggaran.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="bg-slate-900/80 p-3 rounded-xl mb-4 text-xs border border-slate-800 space-y-1">
+                            <div class="flex justify-between"><span class="text-slate-400">Time Reduction:</span><span class="text-blue-400 font-bold">Significant</span></div>
+                            <div class="flex justify-between"><span class="text-slate-400">Accuracy:</span><span class="text-emerald-400 font-bold">100% Policy Compliant</span></div>
+                        </div>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-1 rounded border border-slate-700">Automation Logic</span>
+                            <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-1 rounded border border-slate-700">AI Detection</span>
+                            <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-1 rounded border border-slate-700">SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between glow-hover">
+                    <div>
+                        <div class="text-xs font-bold text-cyan-400 mb-2 uppercase tracking-wider"><i class="fa-solid fa-shield-halved mr-1"></i> Risk Mitigation</div>
+                        <h3 class="text-lg font-bold text-white mb-2">3PL Facility Risk & HSE Audit</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed mb-4">
+                            Audit sistematis fasilitas mitra ekspedisi 3PL dan pembuatan rencana kontingensi transportasi/gudang untuk mencegah downtime rantai pasok.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="bg-slate-900/80 p-3 rounded-xl mb-4 text-xs border border-slate-800 space-y-1">
+                            <div class="flex justify-between"><span class="text-slate-400">Risk Reduction:</span><span class="text-cyan-400 font-bold">25% Mitigated</span></div>
+                            <div class="flex justify-between"><span class="text-slate-400">Framework:</span><span class="text-slate-200 font-bold">HSE & Contingency</span></div>
+                        </div>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-1 rounded border border-slate-700">3PL Audit</span>
+                            <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-1 rounded border border-slate-700">Supply Chain</span>
+                            <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-1 rounded border border-slate-700">Executive Pack</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between glow-hover">
+                    <div>
+                        <div class="text-xs font-bold text-emerald-400 mb-2 uppercase tracking-wider"><i class="fa-solid fa-database mr-1"></i> Big Data Processing</div>
+                        <h3 class="text-lg font-bold text-white mb-2">1M+ Daily SLA Data Normalization</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed mb-4">
+                            Pemrosesan dan normalisasi 1 juta+ catatan SLA harian untuk pengiriman inbound dan outbound DKI Jakarta serta pembuatan dasbor visualisasi GM & Regional Managers.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="bg-slate-900/80 p-3 rounded-xl mb-4 text-xs border border-slate-800 space-y-1">
+                            <div class="flex justify-between"><span class="text-slate-400">Volume:</span><span class="text-emerald-400 font-bold">1M+ Records/Day</span></div>
+                            <div class="flex justify-between"><span class="text-slate-400">Users:</span><span class="text-slate-200 font-bold">GMs & Regional Mgrs</span></div>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-1 rounded border border-slate-700">Advanced Excel</span>
+                            <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-1 rounded border border-slate-700">SQL</span>
+                            <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-1 rounded border border-slate-700">BI Dashboards</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Culture & Gallery Section -->
+        <section id="culture" class="max-w-7xl mx-auto px-6 md:px-12 py-16">
+            <div class="mb-10">
+                <h2 class="text-3xl font-extrabold text-white mb-2">Career Gallery & Team Culture</h2>
+                <p class="text-slate-400 text-sm">Kolaborasi tim, perayaan pencapaian, dan budaya kerja profesional dalam lingkungan e-commerce logistik.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Image 1 -->
+                <div class="glass-card rounded-2xl overflow-hidden group glow-hover">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="SeaTalk_IMG_20261001_154855.jpeg" alt="Official Headshot" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute bottom-3 left-4 right-4">
+                            <span class="text-[10px] bg-blue-600 text-white px-2 py-0.5 rounded font-bold uppercase tracking-wider">Official</span>
+                            <h4 class="text-sm font-bold text-white mt-1">Eki Maulana Profile</h4>
+                            <p class="text-[11px] text-slate-300">Quality Performance Officer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 2 -->
+                <div class="glass-card rounded-2xl overflow-hidden group glow-hover">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="SeaTalk_IMG_20261001_154900.jpeg" alt="SEA 16th Anniversary" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute bottom-3 left-4 right-4">
+                            <span class="text-[10px] bg-cyan-600 text-white px-2 py-0.5 rounded font-bold uppercase tracking-wider">Event</span>
+                            <h4 class="text-sm font-bold text-white mt-1">SEA 16th Anniversary</h4>
+                            <p class="text-[11px] text-slate-300">Celebrating Company Milestones</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 3 -->
+                <div class="glass-card rounded-2xl overflow-hidden group glow-hover">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="SeaTalk_IMG_20261001_154902.jpeg" alt="Team Collaboration" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute bottom-3 left-4 right-4">
+                            <span class="text-[10px] bg-emerald-600 text-white px-2 py-0.5 rounded font-bold uppercase tracking-wider">Teamwork</span>
+                            <h4 class="text-sm font-bold text-white mt-1">Logistics & Ops Team</h4>
+                            <p class="text-[11px] text-slate-300">Cross-functional Engagement</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 4 -->
+                <div class="glass-card rounded-2xl overflow-hidden group glow-hover">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="SeaTalk_IMG_20261001_154905.jpeg" alt="Milestone Celebration" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute bottom-3 left-4 right-4">
+                            <span class="text-[10px] bg-indigo-600 text-white px-2 py-0.5 rounded font-bold uppercase tracking-wider">Moment</span>
+                            <h4 class="text-sm font-bold text-white mt-1">Birthday & Milestone Joy</h4>
+                            <p class="text-[11px] text-slate-300">Positive Workplace Culture</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience Section -->
+        <section id="experience" class="max-w-7xl mx-auto px-6 md:px-12 py-16">
+            <h2 class="text-3xl font-extrabold text-white mb-10">Professional Experience</h2>
+            
+            <div class="space-y-8 relative border-l-2 border-slate-800 ml-3 md:ml-6 pl-6 md:pl-8">
+                
+                <!-- Experience 1 -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] md:-left-[39px] top-1.5 w-4 h-4 bg-blue-500 rounded-full border-4 border-slate-950 group-hover:scale-125 transition"></div>
+                    <div class="glass-card p-6 md:p-8 rounded-2xl space-y-4">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-1">
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Quality Performance Officer — Courier Management</h3>
+                                <p class="text-blue-400 font-semibold text-sm">Shopee Express Indonesia</p>
+                            </div>
+                            <span class="text-xs bg-blue-950 text-blue-300 border border-blue-800/60 px-3 py-1 rounded-full font-mono w-fit">April 2026 - Present</span>
+                        </div>
+                        <ul class="list-disc list-inside text-slate-300 text-xs sm:text-sm space-y-2 leading-relaxed">
+                            <li>Menghitung dan memvalidasi penalti performa KPI kurir secara berkala, memastikan potongan akurat dan sesuai SOP.</li>
+                            <li>Memimpin proyek otomatisasi kalkulasi penalti KPI kurir untuk menggantikan alur kerja manual berbasis spreadsheet.</li>
+                            <li>Menerapkan analisis berbasis AI untuk mendeteksi anomali dan pola pelanggaran berulang pada data kinerja kurir.</li>
+                            <li>Mengelola kerangka kerja hukuman dan eskalasi disiplin kurir berdasarkan pelanggaran KPI secara transparan.</li>
+                            <li>Memelihara dan mengaudit basis data kinerja kurir triwulanan untuk memastikan integritas data dan kesiapan audit manajemen.</li>
+                            <li>Berkolaborasi lintas divisi bersama tim Courier Management, Operasional, dan Data untuk menyempurnakan kebijakan penalti.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] md:-left-[39px] top-1.5 w-4 h-4 bg-slate-700 rounded-full border-4 border-slate-950 group-hover:bg-blue-500 group-hover:scale-125 transition"></div>
+                    <div class="glass-card p-6 md:p-8 rounded-2xl space-y-4">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-1">
+                            <div>
+                                <h3 class="text-xl font-bold text-white">3PL Management Specialist</h3>
+                                <p class="text-cyan-400 font-semibold text-sm">Shopee Express Indonesia</p>
+                            </div>
+                            <span class="text-xs bg-slate-800 text-slate-300 border border-slate-700 px-3 py-1 rounded-full font-mono w-fit">June 2025 - March 2026</span>
+                        </div>
+                        <ul class="list-disc list-inside text-slate-300 text-xs sm:text-sm space-y-2 leading-relaxed">
+                            <li>Memastikan kepatuhan terhadap regulasi HSE dan standar kualitas melalui audit sistematis fasilitas mitra 3PL, memitigasi risiko sebesar 25%.</li>
+                            <li>Mengembangkan dan menerapkan rencana kontingensi untuk gangguan transportasi dan pergudangan demi kelangsungan bisnis.</li>
+                            <li>Berkolaborasi dengan tim Supply Planning, Procurement, dan Sales untuk mengintegrasikan strategi 3PL.</li>
+                            <li>Menyusun laporan bulanan (*performance review packs*) mengintegrasikan data OTIF, Lead Time, dan Fulfillment Cycle.</li>
+                            <li>Mempresentasikan analisis data dalam Weekly Business Reviews (WBRs) dan Monthly Performance Meetings (MBRs) kepada manajemen senior.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] md:-left-[39px] top-1.5 w-4 h-4 bg-slate-700 rounded-full border-4 border-slate-950 group-hover:bg-blue-500 group-hover:scale-125 transition"></div>
+                    <div class="glass-card p-6 md:p-8 rounded-2xl space-y-4">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-1">
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Order Tracker Management</h3>
+                                <p class="text-indigo-400 font-semibold text-sm">Shopee Express Indonesia</p>
+                            </div>
+                            <span class="text-xs bg-slate-800 text-slate-300 border border-slate-700 px-3 py-1 rounded-full font-mono w-fit">January 2024 - June 2025</span>
+                        </div>
+                        <ul class="list-disc list-inside text-slate-300 text-xs sm:text-sm space-y-2 leading-relaxed">
+                            <li>Mengembangkan dan mengotomatiskan laporan operasional harian (pesanan *forward*, *return*, *refund*) untuk memantau SLA, mengurangi waktu pelaporan manual hingga 30%.</li>
+                            <li>Menganalisis data pengiriman SLA, tren komplain, dan kesalahan operasional untuk menemukan *root cause*.</li>
+                            <li>Mendukung tim operasional dengan memberikan laporan pesanan yang *over SLA* untuk tindakan korektif tepat waktu.</li>
+                            <li>Berkolaborasi lintas fungsi dengan tim Shopee Marketplace untuk menyelesaikan kendala pengembalian dana dan pesanan.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 4 -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] md:-left-[39px] top-1.5 w-4 h-4 bg-slate-700 rounded-full border-4 border-slate-950 group-hover:bg-blue-500 group-hover:scale-125 transition"></div>
+                    <div class="glass-card p-6 md:p-8 rounded-2xl space-y-4">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-1">
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Quality Control Analyst</h3>
+                                <p class="text-emerald-400 font-semibold text-sm">PT. Global Bintang Timur Express (J&T Express)</p>
+                            </div>
+                            <span class="text-xs bg-slate-800 text-slate-300 border border-slate-700 px-3 py-1 rounded-full font-mono w-fit">November 2022 - October 2023</span>
+                        </div>
+                        <ul class="list-disc list-inside text-slate-300 text-xs sm:text-sm space-y-2 leading-relaxed">
+                            <li>Memproses, menormalisasi, dan menganalisis lebih dari 1 juta rekam data SLA harian pengiriman *inbound* & *outbound* DKI Jakarta.</li>
+                            <li>Merancang dan membangun dasbor visualisasi data KPI yang digunakan oleh General Manager & Regional Manager.</li>
+                            <li>Mengevaluasi kinerja tim regional terhadap metrik utama untuk perbaikan penanganan pengiriman.</li>
+                            <li>Membuat alur kerja pelaporan otomatis untuk mempermudah pemrosesan *dataset* besar.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 5 -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] md:-left-[39px] top-1.5 w-4 h-4 bg-slate-700 rounded-full border-4 border-slate-950 group-hover:bg-blue-500 group-hover:scale-125 transition"></div>
+                    <div class="glass-card p-6 md:p-8 rounded-2xl space-y-4">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-1">
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Warehouse Administrator</h3>
+                                <p class="text-amber-400 font-semibold text-sm">PT Aneka Tirta Talenta</p>
+                            </div>
+                            <span class="text-xs bg-slate-800 text-slate-300 border border-slate-700 px-3 py-1 rounded-full font-mono w-fit">August 2022 - October 2022</span>
+                        </div>
+                        <ul class="list-disc list-inside text-slate-300 text-xs sm:text-sm space-y-2 leading-relaxed">
+                            <li>Mengelola proses pengadaan *end-to-end* dengan membuat Purchase Order (PO) internal dan eksternal.</li>
+                            <li>Mengembangkan sistem penjadwalan inventaris untuk mencegah penumpukan stok (*stock overflow*).</li>
+                            <li>Membuat laporan kinerja vendor mendalam untuk mendukung kolaborasi pemasok.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Education & Skills Matrix -->
+        <section id="skills" class="max-w-7xl mx-auto px-6 md:px-12 py-16">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                
+                <!-- Education -->
+                <div class="lg:col-span-4 space-y-6">
+                    <h2 class="text-2xl font-extrabold text-white">Education</h2>
+                    <div class="glass-card p-6 rounded-2xl glow-hover">
+                        <div class="w-10 h-10 rounded-xl bg-blue-600/20 text-blue-400 flex items-center justify-center mb-4 text-lg">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Bachelor of Informatics</h3>
+                        <p class="text-blue-400 text-xs font-medium">Universitas Indraprasta PGRI (UNINDRA)</p>
+                        <p class="text-slate-400 text-xs mt-2">Teknik Informatika | Lulus November 2022</p>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-2xl glow-hover">
+                        <h3 class="text-sm font-bold text-white mb-3"><i class="fa-solid fa-award text-yellow-400 mr-2"></i> Professional Skills</h3>
+                        <div class="flex flex-wrap gap-1.5 text-xs">
+                            <span class="bg-slate-800 text-slate-300 px-2.5 py-1 rounded border border-slate-700">Cross-Functional Collaboration</span>
+                            <span class="bg-slate-800 text-slate-300 px-2.5 py-1 rounded border border-slate-700">Strategic Decision Making</span>
+                            <span class="bg-slate-800 text-slate-300 px-2.5 py-1 rounded border border-slate-700">Process Automation</span>
+                            <span class="bg-slate-800 text-slate-300 px-2.5 py-1 rounded border border-slate-700">Executive Reporting</span>
+                            <span class="bg-slate-800 text-slate-300 px-2.5 py-1 rounded border border-slate-700">Risk Mitigation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Competencies & Tools -->
+                <div class="lg:col-span-8 space-y-6">
+                    <h2 class="text-2xl font-extrabold text-white">Core Competencies & Tools</h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Card 1 -->
+                        <div class="glass-card p-6 rounded-2xl glow-hover">
+                            <h3 class="text-base font-bold text-blue-400 mb-4 flex items-center"><i class="fa-solid fa-chart-pie mr-2.5"></i> Data Analysis & Visualization</h3>
+                            <ul class="space-y-2 text-xs text-slate-300">
+                                <li>• KPI & Performance Dashboard Development</li>
+                                <li>• SLA & Courier Performance Monitoring</li>
+                                <li>• Root Cause Analysis & Trend Forecasting</li>
+                                <li>• Data Automation & AI-Assisted Analysis</li>
+                                <li>• Data Normalization & Large Dataset Mining</li>
+                            </ul>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="glass-card p-6 rounded-2xl glow-hover">
+                            <h3 class="text-base font-bold text-cyan-400 mb-4 flex items-center"><i class="fa-solid fa-screwdriver-wrench mr-2.5"></i> Technical Tools & Software</h3>
+                            <ul class="space-y-2 text-xs text-slate-300">
+                                <li>• <strong>Microsoft Excel:</strong> Advanced (PivotTables, Macros, Charts)</li>
+                                <li>• <strong>SQL & Database Querying:</strong> Querying & Normalization</li>
+                                <li>• <strong>Reporting Systems:</strong> BI Tools, Looker Studio dashboards</li>
+                                <li>• <strong>Automation Tools:</strong> AI Analysis & AppScript Workflows</li>
+                            </ul>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="glass-card p-6 rounded-2xl glow-hover md:col-span-2">
+                            <h3 class="text-base font-bold text-emerald-400 mb-4 flex items-center"><i class="fa-solid fa-truck-ramp-box mr-2.5"></i> Operational & Logistics Management</h3>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-300">
+                                <div>• Courier KPI Penalty Calculation & Enforcement</div>
+                                <div>• 3PL & Vendor Audit & Management</div>
+                                <div>• Warehouse Administration & Procurement</div>
+                                <div>• Inventory Control & Supply Chain Planning</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer Call-to-Action -->
+        <section id="contact" class="max-w-7xl mx-auto px-6 md:px-12 py-20 text-center">
+            <div class="glass-card p-10 md:p-16 rounded-3xl glow-hover relative overflow-hidden">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">
+                    Ready to Elevate Your Logistics Performance?
+                </h2>
+                <p class="text-slate-400 max-w-2xl mx-auto mb-8 text-sm sm:text-base leading-relaxed">
+                    Saya terbuka untuk peluang profesional dalam posisi Quality Performance, 3PL Management, maupun Analytics Logistik. Mari berdiskusi lebih lanjut!
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="mailto:ekimaulanaa7@gmail.com" class="px-8 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl shadow-lg shadow-blue-500/30 transition transform hover:-translate-y-0.5 text-sm">
+                        <i class="fa-regular fa-paper-plane mr-2"></i> Kirim Email
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="px-8 py-3.5 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold rounded-xl transition text-sm">
+                        <i class="fa-brands fa-linkedin mr-2 text-blue-400"></i> Profil LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center py-8 text-xs text-slate-500 border-t border-slate-800/80">
+            © 2026 Eki Maulana. Quality Performance Officer & Logistics Data Analyst.
+        </footer>
+    </div>
+
+    <!-- Script Animasi Partikel Interactive Background -->
+    <script>
+        const canvas = document.getElementById('particles');
+        const ctx = canvas.getContext('2d');
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        const particles = [];
+        const particleCount = 45;
+
+        for (let i = 0; i < particleCount; i++) {
+            particles.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                radius: Math.random() * 2 + 0.5,
+                vx: (Math.random() - 0.5) * 0.4,
+                vy: (Math.random() - 0.5) * 0.4,
+                alpha: Math.random() * 0.4 + 0.1
+            });
+        }
+
+        function drawParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => {
+                p.x += p.vx;
+                p.y += p.vy;
+
+                if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+                if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(59, 130, 246, ${p.alpha})`;
+                ctx.fill();
+            });
+            requestAnimationFrame(drawParticles);
+        }
+        drawParticles();
+    </script>
 </body>
 </html>
